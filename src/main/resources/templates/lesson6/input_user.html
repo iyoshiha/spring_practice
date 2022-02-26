@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title>input user</title>
+</head>
+<body>
+<h2>user registration</h2>
+
+	<form action="/spring_practice/userRegist" method="post" th:object="${userForm}">
+	
+	<label>name:
+		<input type="text" th:field="*{name}" />
+		<span th:errors="*{name}"></span>
+	</label><br />
+	
+	<label>age:
+		<input type="number" th:field="*{age}" />
+		<span th:errors="*{age}"></span>
+	</label><br />
+	
+	<label>birthday:
+		<input type="text" th:field="*{birthday}" />
+		<span th:errors="*{birthday}"></span>
+	</label><br />
+	
+	<!-- OK --><label><input type="submit" value="register"></label> 
+	
+</form> 
+
+</body>
+</html>

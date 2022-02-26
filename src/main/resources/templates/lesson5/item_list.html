@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title>ItemList</title>
+</head>
+<body>
+
+<table>
+	<tr>
+		<th th:each="item : ${itemList}" th:text="'this is item: ' + ${item}"></th>
+	</tr>
+	<tr>
+		<td th:each="item : ${itemList}" th:text="'contents:' + ${item}"></td>
+	</tr>
+</table>
+
+<table>
+	<tr>
+		<td></td>
+	</tr>
+	
+	<tr>
+		<td></td>
+	</tr>
+
+</table>
+</body>
+</html>

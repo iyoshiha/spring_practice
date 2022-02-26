@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title>ItemList</title>
+</head>
+<body>
+
+<table>
+	<tr>
+		<th th:each="item : ${session.itemList}" th:text="'this is item: ' + ${item}"></th>
+	</tr>
+	<tr>
+		<td th:each="item : ${session.itemList}" th:text="'contents:' + ${item}"></td>
+	</tr>
+</table>
+
+</body>
+</html>
