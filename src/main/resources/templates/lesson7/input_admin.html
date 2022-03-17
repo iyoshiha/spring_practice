@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title>user management</title>
+</head>
+<body>
+<h2>user management</h2>
+
+<form action="/spring_practice/registAdmin" method="post">
+	<label>Name: 
+		<input type="text" name="admin">
+	</label>
+	<label>
+		<input type="submit" value="register">
+	</label>	
+</form>
+	<p> this link below can detach the user </p>
+	<a href="/spring_practice/deleteAdmin">admin detach</a>
+</body>
+</html>
