@@ -5,7 +5,16 @@ public class ItemForm {
 	private int id;
 	private String name;
 	private int price;
+	private int categoryId;
 	
+	public int getCategoryId() {
+		return categoryId;
+	}
+
+	public void setCategoryId(int categoryId) {
+		this.categoryId = categoryId;
+	}
+
 	public int getId() {
 		return id;
 	}

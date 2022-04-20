@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title>item management</title>
+<script th:src="@{/js/item.js}"></script>
+<script>
+onload = getItem()
+onload = alert("hello world")
+</script>
+</head>
+<body>
+<h2>item list</h2>
+<table id="itemList">
+<tr>
+	<th>ID</th><th>name</th>
+	<th>price</th>
+	<th>category</th>
+</tr>
+</table>
+<h3>edit items</h3>
+
+	<form name="regist">
+	<label>item id:
+		<input type="number" name="id">
+	</label>
+	
+	<label>item name:
+		<input type="text" name="name">
+	</label>
+
+	<label>item price:
+		<input type="number" name="">
+	</label>
+	
+	<label>item category:
+	<select name="categoryId">
+		<option value="1">book</option>
+		<option value="2">music</option>
+		<option value="3">home appliance</option>
+	</select>
+	</label> <br />
+		<input type="submit" value="register" onclick="registItem()" />
+		<input type="submit" value="update" onclick="updateItem()" />
+		<input type="submit" value="delete" onclick="deleteItem()" />
+	</form>
+
+</body>
+</html>

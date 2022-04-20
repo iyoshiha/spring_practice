@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title>search price</title>
+</head>
+<body>
+<h2>search price</h2>
+<form action="/spring_practice/itemJoinCategory/findByPriceGeInputPrice" method="post">
+	<label>
+		<input type="number" name="price" />
+	</label><br />
+	<label><input type="submit" value="register"></label>
+</form>
+<table>
+<tr>
+	<th>ID</th><th>name</th>
+	<th>price</th>
+	<th>category</th>
+</tr>
+<tr th:each="itemJoinCategory : ${itemJoinCategoryList}">
+	<td th:text=${itemJoinCategory.id}></td>
+	<td th:text=${itemJoinCategory.name}></td>
+	<td th:text=${itemJoinCategory.price}></td>
+	<td th:text=${itemJoinCategory.category.name}></td>
+	
+</tr>
+</table>
+</body>
+</html>

@@ -9,6 +9,7 @@
 <table>
 	<tr>
 		<th th:each="item : ${itemList}" th:text="'this is item: ' + ${item}"></th>
+		<th th:text="'item = ' + ${item}"></th>
 	</tr>
 	<tr>
 		<td th:each="item : ${itemList}" th:text="'contents:' + ${item}"></td>

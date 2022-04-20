@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title>search all items</title>
+</head>
+<body>
+<h2>search all items</h2>
+<table>
+<tr>
+	<th>ID</th><th>name</th>
+	<th>price</th>
+	<th>category</th>
+</tr>
+<tr th:each="itemJoinCategory : ${itemJoinCategoryList}">
+	<td th:text=${itemJoinCategory.id}></td>
+	<td th:text=${itemJoinCategory.name}></td>
+	<td th:text=${itemJoinCategory.price}></td>
+	<td th:text=${itemJoinCategory.category.name}></td>
+	
+</tr>
+</table>
+</body>
+</html>
